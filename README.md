@@ -1,13 +1,9 @@
-Here's a detailed `README.md` file for your project:
-
-```markdown
 # Masterji.com Platform Machine Coding Assignment
 
 This project is a submission for the machine coding assignment from the Masterji.com platform. The project consists of three main sections: OTP Form, Drag and Drop Course Cards, and a Data Table. Each section is implemented as a separate React component with its own URL route.
 
 ## Project Structure
 
-```plaintext
 public/
   └── images/
       └── (all images)
@@ -57,7 +53,7 @@ The application has the following URL routes for each section:
 The base URL (/) redirects to the /otp-form route.
 
 ## Live Link
-[Live Project](http://your-live-project-link.com)
+[Live Project](https://masterji-assigment-rzv3.vercel.app/)
 
 ## Getting Started
 
@@ -72,7 +68,7 @@ The base URL (/) redirects to the /otp-form route.
     ```
 2. Navigate to the project directory:
     ```sh
-    cd masterji-machine-coding-assignment
+    cd assignment1
     ```
 3. Install the dependencies:
     ```sh
