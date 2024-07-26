@@ -1,9 +1,11 @@
-# Masterji.com Platform Machine Coding Assignment
+
+## Masterji.com Platform Machine Coding Assignment
 
 This project is a submission for the machine coding assignment from the Masterji.com platform. The project consists of three main sections: OTP Form, Drag and Drop Course Cards, and a Data Table. Each section is implemented as a separate React component with its own URL route.
 
 ## Project Structure
 
+```plaintext
 public/
   └── images/
       └── (all images)
@@ -68,7 +70,7 @@ The base URL (/) redirects to the /otp-form route.
     ```
 2. Navigate to the project directory:
     ```sh
-    cd assignment1
+    cd masterji-machine-coding-assignment
     ```
 3. Install the dependencies:
     ```sh
