@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+Here's a detailed `README.md` file for your project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# Masterji.com Platform Machine Coding Assignment
 
-## Available Scripts
+This project is a submission for the machine coding assignment from the Masterji.com platform. The project consists of three main sections: OTP Form, Drag and Drop Course Cards, and a Data Table. Each section is implemented as a separate React component with its own URL route.
 
-In the project directory, you can run:
+## Project Structure
 
-### `npm start`
+```plaintext
+public/
+  └── images/
+      └── (all images)
+  └── index.html/
+src/
+  ├── components/
+  │   ├── otp/
+  │   │   ├── FormContainer.js
+  │   │   ├── OtpForm.js
+  │   │   └── OtpInput.js
+  │   ├── DragDrop/
+  │   │   ├── CourseCard.js
+  │   │   └── CourseList.js
+  │   ├── Batches/
+  │   │   ├── BatchesList.js
+  │   │   ├── Table.js
+  │   │   └── Pagination.js
+  └── utils/
+      ├── coursedata.js
+      └── batchesdata.js
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Details
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### OTP Form
+A form to input a 4-digit OTP with the following states:
+- **Empty Form State:** A form to input a 4-digit OTP
+- **Filling State:** The state during the input of the OTP
+- **Filled State (Success):** The state when the OTP is correctly filled
+- **Filled State (Error):** The state when the OTP is incorrectly filled
 
-### `npm test`
+### Drag and Drop Course Cards
+A vertical list of course cards using a drag-and-drop library. Each card includes actions for:
+- "Move to Top"
+- "Move to Bottom"
+- "Remove"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Data Table
+A paginated table listing batches of a course and their statuses. It includes a search option to filter the batches.
 
-### `npm run build`
+## Routes
+The application has the following URL routes for each section:
+- **/otp-form:** The OTP form
+- **/course-list:** The Drag and Drop Course Cards
+- **/batches:** The Data Table
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The base URL (/) redirects to the /otp-form route.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Live Link
+[Live Project](http://your-live-project-link.com)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Prerequisites
+- Node.js
+- npm
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Esha-Sharmaa/masterji-assigment.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd masterji-machine-coding-assignment
+    ```
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running the Application
+To start the development server:
+```sh
+npm start
+```
+This will run the application on `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Building for Production
+To create a production build:
+```sh
+npm run build
+```
+This will create an optimized build in the `build` directory.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Components
 
-## Learn More
+### OTP Form
+- **FormContainer.js:** Wrapper component for the OTP form.
+- **OtpForm.js:** Main component for the OTP form.
+- **OtpInput.js:** Component for the OTP input field.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Drag and Drop Course Cards
+- **CourseCard.js:** Component for individual course cards.
+- **CourseList.js:** Component for the list of course cards.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Data Table
+- **BatchesList.js:** Component for the list of batches.
+- **Table.js:** Component for the paginated table.
+- **Pagination.js:** Component for pagination controls.
 
-### Code Splitting
+## Utilities
+- **coursedata.js:** Data for the course cards.
+- **batchesdata.js:** Data for the batches table.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request.

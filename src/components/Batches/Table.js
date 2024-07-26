@@ -26,7 +26,7 @@ const Table = ({ paginatedBatches }) => {
               <td>
                 <span
                   className={`status ${
-                    batch.status === "Published" ? "published" : "unpublished"
+                    batch.status === "published" ? "published" : "unpublished"
                   }`}
                 >
                   {batch.status}

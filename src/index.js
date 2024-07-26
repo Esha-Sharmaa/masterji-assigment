@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import FromContainer from "./components/otp/FormContainer";
 import CourseList from "./components/DragDrop/CourseList";
 import BatchesList from "./components/Batches/BatchesList";
@@ -9,6 +13,10 @@ import BatchesList from "./components/Batches/BatchesList";
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Navigate to="/otp-form" />,
+  },
+  {
+    path: "/otp-form",
     element: <FromContainer />,
   },
   {

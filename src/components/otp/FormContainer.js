@@ -1,5 +1,6 @@
 import { useState } from "react";
 import OtpInput from "./OtpInput";
+import ChaiCode from "../ChaiCode";
 
 const FromContainer = () => {
   const [otp, setOtp] = useState(Array(4).fill(""));
@@ -35,6 +36,7 @@ const FromContainer = () => {
           Didn’t receive code? <span>Resend</span>{" "}
         </p>
       </div>
+      <ChaiCode />
     </div>
   );
 };

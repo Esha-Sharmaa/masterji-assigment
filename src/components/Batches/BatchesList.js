@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import batchesData from "../../utils/batchesdata";
 import Table from "./Table";
 import Pagination from "./Pagination";
+import ChaiCode from "../ChaiCode";
 
 const BatchesList = () => {
   const [search, setSearch] = useState("");
@@ -72,6 +73,7 @@ const BatchesList = () => {
           />
         </div>
       </div>
+      <ChaiCode />
     </div>
   );
 };

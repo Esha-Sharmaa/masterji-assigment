@@ -15,6 +15,7 @@ input[type='number']::-webkit-inner-spin-button {
 
 .otp-form-container {
   background: #3F72AF;
+  position: relative;
   height: 100vh;
 }
 
@@ -139,6 +140,7 @@ input[type='number']::-webkit-inner-spin-button {
 
 .drag-drop-container {
   background: hsl(98, 33%, 84%);
+  position: relative;
 }
 
 .course-heading {
@@ -270,6 +272,7 @@ input[type='number']::-webkit-inner-spin-button {
 /* Batches list */
 .batches-container {
   background: #E2BBE9;
+  position: relative;
 }
 
 .batches-container>h1 {
@@ -384,4 +387,18 @@ input[type='number']::-webkit-inner-spin-button {
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.chai-code {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  border-radius: 18px;
+  width: 100px;
+  height: 100px;
+}
+
+.chai-code>img {
+  width: 100%;
+  object-fit: cover;
 }

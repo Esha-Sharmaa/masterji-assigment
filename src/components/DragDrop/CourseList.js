@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import courseData from "../../utils/coursedata";
 import CourseCard from "./CourseCard";
+import ChaiCode from "../ChaiCode";
 
 const CourseList = () => {
   const [courses, setCourses] = useState(courseData);
@@ -17,19 +18,21 @@ const CourseList = () => {
     setCourses(items);
   };
   const handleMoveToTop = (id) => {
-    let newArr = courses.filter((ele, index) => index + 1 !== id);
-    newArr.unshift(courses[id - 1]);
+    let newArr = courses.filter((ele) => ele.id !== id);
+    let topObj = courses.find((ele) => ele.id === id);
+    newArr.unshift(topObj);
     setCourses([...newArr]);
     setActiveCourseId(null);
   };
   const handleMoveToBottom = (id) => {
-    let newArr = courses.filter((ele, index) => index + 1 !== id);
-    newArr.push(courses[id - 1]);
+    let newArr = courses.filter((ele) => ele.id !== id);
+    let topObj = courses.find((ele) => ele.id === id);
+    newArr.push(topObj);
     setCourses([...newArr]);
     setActiveCourseId(null);
   };
   const handleRemove = (id) => {
-    const newArr = courses.filter((ele, index) => index + 1 !== id);
+    const newArr = courses.filter((ele) => ele.id !== id);
     setCourses([...newArr]);
     setActiveCourseId(null);
   };
@@ -80,6 +83,7 @@ const CourseList = () => {
             )}
           </Droppable>
         </div>
+        <ChaiCode />
       </div>
     </DragDropContext>
   );
