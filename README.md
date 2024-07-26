@@ -27,6 +27,8 @@ src/
       ├── coursedata.js
       └── batchesdata.js
 ```
+## Live Link
+[Live Project](https://masterji-assigment-rzv3.vercel.app/)
 
 ## Project Details
 
@@ -54,8 +56,10 @@ The application has the following URL routes for each section:
 
 The base URL (/) redirects to the /otp-form route.
 
-## Live Link
-[Live Project](https://masterji-assigment-rzv3.vercel.app/)
+## screenshots
+![alt text](./public/images/opt.png)
+![alt text](./public/images/course.png)
+![alt text](./public/images/batches.png)
 
 ## Getting Started
 
